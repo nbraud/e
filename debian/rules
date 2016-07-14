@@ -2,6 +2,8 @@
 
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 export DEB_LDFLAGS_MAINT_APPEND := -Wl,--as-needed
+include /usr/share/dpkg/buildflags.mk
+
 DEB_HOST_GNU_SYSTEM=$(shell dpkg-architecture -qDEB_HOST_GNU_SYSTEM)
 DEB_HOST_GNU_CPU=$(shell dpkg-architecture -qDEB_HOST_GNU_CPU)
 SVN_RELEASE=$(shell grep '^release=' configure | cut -d'=' -f2-)
