@@ -10,8 +10,8 @@ Build-Depends: debhelper (>= 9), dh-autoreconf, libxext-dev, libeet-bin,
  libecore-bin (>= 1.15.1)
 Build-Depends-Indep: doxygen
 Standards-Version: 3.9.8
-Vcs-Git: https://anonscm.debian.org/pkg-e/apps/e.git
-Vcs-Browser: https://anonscm.debian.org/gitweb/?p=pkg-e/apps/e.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-e/apps/e.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-e/apps/e.git/
 Homepage: http://www.enlightenment.org
 
 Package: enlightenment
