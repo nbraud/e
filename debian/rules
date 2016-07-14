@@ -10,6 +10,9 @@ SVN_RELEASE=$(shell grep '^release=' configure | cut -d'=' -f2-)
 ARCH_PATH=$(DEB_HOST_GNU_SYSTEM)-$(DEB_HOST_GNU_CPU)-$(SVN_RELEASE)
 MULTIARCH := $(shell dpkg-architecture -qDEB_TARGET_MULTIARCH)
 
+export XDG_RUNTIME_DIR=/tmp
+export HOME=/tmp
+
 %:
 	dh $@ --with autoreconf --parallel
 
